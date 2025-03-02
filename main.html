@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 p-6 mx-30">
+    <header class="rounded-lg">
+        <nav class="mt-5 bg-[#FFFFFF]">
+            <div class="navbar bg-base-100 shadow-sm flex justify-between rounded-lg">
+                <div class="flex">
+                    <img class="w-10" src="./assets/logo.png" alt="" srcset="">
+                    <h1 class=" text-3xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div>
+                    <button id="btn-back" class="bg-blue-600 text-white rounded-xl font-semibold p-2">Back To
+                        Desk</button>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-center text-3xl font-bold">Blogs</h1>
+        <div class="mt-5 bg-white p-5">
+            <h2 class="text-xl">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <hr>
+            <p>Ans: In the DOM there are several ways to select elements using JavaScript.
+                <br>
+                1.getElementById("id");
+                <br>
+                2.getElementsByClassName("class-name");
+                <br>
+                3.getElementsByTagName("div");
+                <br>
+                4.getElementsByName();
+                <br>
+                5.querySelector(".Class-name");
+                <br>
+                6.document.querySelectorAll(".Class-name");
+            </p>
+        </div>
+        <div class="mt-5 bg-white p-5">
+            <h2 class="text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+            <hr>
+            <p>Ans:1. By using innerHTML We can get or set html content inside an element.
+                <br>
+                2.By using innerText we can get or set text inside an element.but ignores hidden elements.
+                <br>
+                3.By using textContent we can get or set all text content,including hidden elements.
+            </p>
+        </div>
+        <div class="mt-5 bg-white p-5">
+            <h2 class="text-xl">Question-3: What is event delegation in the DOM?</h2>
+            <hr>
+            <p>Ans: Event Delegation is a event bubbling technique in javascript.by This we can add a single
+                addEventListener to the parent element and this will handle the multiple child element events.
+            </p>
+        </div>
+        <div class="mt-5 bg-white p-5">
+            <h2 class="text-xl">Question-4: What is event bubbling in the DOM?
+            </h2>
+            <hr>
+            <p>Ans: Bubbling in the DOM is an event propagation method.In This an event starts from the target element and bubbles up through its parent elements until it reaches the document root.
+            </p>
+        </div>
+        <div class="mt-5 bg-white p-5">
+            <h2 class="text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+            <hr>
+            <p>Ans: In JavaScript, we can dynamically create, add, and remove elements in the DOM using various methods.
+                <br>
+                1.Creating an Element.document.createElement('tagName');
+                <br>
+                2.Adding an Element.
+                <br>
+                *Using appendChild();
+                <br>
+                * Using append();
+                <br>
+                3.Removing an Element
+                <br>
+                *Using remove();
+                <br>
+                *Using removeChild();
+            </p>
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
